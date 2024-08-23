@@ -1,4 +1,6 @@
-This is a basic app mocking a drinks menu. 
+This is a basic app mocking a drinks menu.
+Made with Vite React frontend, Django backend.
+
 I have provided some initial data in the form of a Django fixture.
 
 To view the data on startup:
