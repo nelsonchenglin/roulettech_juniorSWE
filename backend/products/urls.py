@@ -3,14 +3,12 @@ from .views import (
     CreateBeverageAPIView,
     RetrieveUpdateBeverageAPIView,
     NonAlcoholicBeveragesAPIView,
-    AlcoholicBeveragesAPIView
+    AlcoholicBeveragesAPIView,
 )
 
-
 urlpatterns = [
-    path('products/', CreateBeverageAPIView.as_view(), name = 'bevs_create'),
-    path('products/<pk>/', RetrieveUpdateBeverageAPIView.as_view(), name = 'bevs_retrieve_update'),
-    path('products/non-alcoholic/', NonAlcoholicBeveragesAPIView.as_view(), name = 'non_alcoholic_bevs'),
-    path('products/alcoholic/', AlcoholicBeveragesAPIView.as_view(), name = 'alcoholic_bevs')
-
+    path('products/non-alcohol/', NonAlcoholicBeveragesAPIView.as_view(), name='non_alcoholic_bevs'),
+    path('products/alcohol/', AlcoholicBeveragesAPIView.as_view(), name='alcoholic_bevs'),
+    path('products/<pk>/', RetrieveUpdateBeverageAPIView.as_view(), name='bevs_retrieve_update'),  # Specific with dynamic segment
+    path('products/', CreateBeverageAPIView.as_view(), name='bevs_create'),  # Least specific
 ]

@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-import HomePage from "./components/homepage/homepage.jsx";
-import NonAlcoholicDrinks from "./components/nonalcoholicDrinks/nonAlcoholicDrinks.jsx";
-import AlcoholicDrinks from "./components/alcoholicDrinks/alcoholicDrinks.jsx";
+import HomePage from "./components/homepage/HomePage.jsx";
+import NonAlcoholicDrinks from "./components/NonalcoholicDrinks/NonAlcoholicDrinks.jsx";
+import AlcoholicDrinks from "./components/AlcoholicDrinks/AlcoholicDrinks.jsx";
 
 function App() {
   return (

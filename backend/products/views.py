@@ -18,11 +18,18 @@ class RetrieveUpdateBeverageAPIView(RetrieveUpdateAPIView):
 class AlcoholicBeveragesAPIView(ListAPIView):
     serializer_class = ProductSerializer
 
-    def get_alcoholic_beverages(self):
+    def get_queryset(self):
         return Product.objects.filter(alcohol=True)
+     
 
 class NonAlcoholicBeveragesAPIView(ListAPIView):
     serializer_class = ProductSerializer
 
-    def get_nonalcoholic_beverages(self):
+    def get_queryset(self):
         return Product.objects.filter(alcohol=False)
+       
+class DrinksPricedAt16APIView(ListAPIView):
+    serializer_class = ProductSerializer
+
+    def get_queryset(self):
+        return Product.objects.all()
