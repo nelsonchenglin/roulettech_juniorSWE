@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE = "http://localhost:8000/products/";
+const API_BASE = "http://localhost:8000/products";
 
 export const getAlcoholicDrinks = async () => {
   try {
@@ -22,12 +22,23 @@ export const getNonAlcoholicDrinks = async () => {
 
 export const createDrink = async (newBeverage) => {
   try {
-    const res = await axios.post(`${API_BASE}`, newBeverage);
+    const res = await axios.post(`${API_BASE}/`, newBeverage);
     return res.data;
   } catch (e) {
     console.error(
       "Problem creating drink. Ensure data object being sent has following fields: name: String, description: String, price: Number",
       e
     );
+  }
+};
+
+export const deleteDrink = async (id) => {
+  try {
+    const res = await axios.delete(`${API_BASE}/${id}/`);
+
+    console.log("Drink Deleted:", res.data);
+    return res.data;
+  } catch (e) {
+    console.error("Problem deleting drink", e);
   }
 };
