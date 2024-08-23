@@ -1,0 +1,202 @@
+[
+{
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+        "name": "Tom Collins",
+        "description": "gin, lemon, simple syrup, club soda",
+        "price": "15.00",
+        "alcohol": true
+    }
+},
+{
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+        "name": "Coke",
+        "description": "Popular soda beverage with a polar bear mascot",
+        "price": "2.00",
+        "alcohol": false
+    }
+},
+{
+    "model": "products.product",
+    "pk": 4,
+    "fields": {
+        "name": "Espresso Martini",
+        "description": "espresso, coffee liquer, vodka, simple syrup",
+        "price": "18.00",
+        "alcohol": true
+    }
+},
+{
+    "model": "products.product",
+    "pk": 5,
+    "fields": {
+        "name": "Fanta",
+        "description": "Popular orange flavored soda.",
+        "price": "2.00",
+        "alcohol": false
+    }
+},
+{
+    "model": "products.product",
+    "pk": 6,
+    "fields": {
+        "name": "Sprite",
+        "description": "Popular lemon-lime flavored soda.",
+        "price": "2.00",
+        "alcohol": false
+    }
+},
+{
+    "model": "products.product",
+    "pk": 7,
+    "fields": {
+        "name": "Ginger Ale",
+        "description": "Ginger flavored soda.",
+        "price": "2.00",
+        "alcohol": false
+    }
+},
+{
+    "model": "products.product",
+    "pk": 8,
+    "fields": {
+        "name": "Water",
+        "description": "Your classic H2O",
+        "price": "1.00",
+        "alcohol": false
+    }
+},
+{
+    "model": "products.product",
+    "pk": 9,
+    "fields": {
+        "name": "Perrier",
+        "description": "Carbonated water AKA spicy water",
+        "price": "2.50",
+        "alcohol": false
+    }
+},
+{
+    "model": "products.product",
+    "pk": 10,
+    "fields": {
+        "name": "Orange Juice",
+        "description": "Fresh squeezed juice from oranges",
+        "price": "3.00",
+        "alcohol": false
+    }
+},
+{
+    "model": "products.product",
+    "pk": 11,
+    "fields": {
+        "name": "Apple Juice",
+        "description": "Fresh squeezed juice from apples",
+        "price": "3.00",
+        "alcohol": false
+    }
+},
+{
+    "model": "products.product",
+    "pk": 12,
+    "fields": {
+        "name": "Perrier Grapefruit",
+        "description": "Grapefruit flavored carbonated water",
+        "price": "2.50",
+        "alcohol": false
+    }
+},
+{
+    "model": "products.product",
+    "pk": 13,
+    "fields": {
+        "name": "Espresso Old Fashioned",
+        "description": "espresso, bourbon, chocolate bitters, vanilla simple syrup",
+        "price": "18.00",
+        "alcohol": true
+    }
+},
+{
+    "model": "products.product",
+    "pk": 14,
+    "fields": {
+        "name": "Old Fashioned",
+        "description": "whiskey, angostura bitters, sugar cube, orange peel",
+        "price": "18.00",
+        "alcohol": true
+    }
+},
+{
+    "model": "products.product",
+    "pk": 15,
+    "fields": {
+        "name": "Screwdriver",
+        "description": "vodka, orange juice",
+        "price": "15.00",
+        "alcohol": true
+    }
+},
+{
+    "model": "products.product",
+    "pk": 16,
+    "fields": {
+        "name": "Paloma",
+        "description": "tequila, grapefruit juice, simple syrup, club soda",
+        "price": "17.00",
+        "alcohol": true
+    }
+},
+{
+    "model": "products.product",
+    "pk": 17,
+    "fields": {
+        "name": "Negroni",
+        "description": "gin, campari, sweet vermouth",
+        "price": "18.00",
+        "alcohol": true
+    }
+},
+{
+    "model": "products.product",
+    "pk": 18,
+    "fields": {
+        "name": "Dirty Martini",
+        "description": "vodka, olive juice, dry vermouth",
+        "price": "16.00",
+        "alcohol": true
+    }
+},
+{
+    "model": "products.product",
+    "pk": 19,
+    "fields": {
+        "name": "Whiskey Sour",
+        "description": "whiskey, lemon juice, egg white, simple syrup",
+        "price": "17.00",
+        "alcohol": true
+    }
+},
+{
+    "model": "products.product",
+    "pk": 20,
+    "fields": {
+        "name": "Mojito",
+        "description": "rum, lime juice, mint, simple syrup, club soda",
+        "price": "17.00",
+        "alcohol": true
+    }
+},
+{
+    "model": "products.product",
+    "pk": 21,
+    "fields": {
+        "name": "Moscow Mule",
+        "description": "vodka, ginger beer, lime juice",
+        "price": "16.00",
+        "alcohol": true
+    }
+}
+]
