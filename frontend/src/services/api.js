@@ -4,7 +4,7 @@ const API_BASE = "http://localhost:8000/api/products";
 
 export const getAlcoholicDrinks = async () => {
   try {
-    const res = await axios.get(`${API_BASE}/alcoholic/`);
+    const res = await axios.get(`${API_BASE}/alcohol/`);
     return res.data;
   } catch (e) {
     console.error("Problem getting alcoholic drinks.", e);
@@ -13,7 +13,7 @@ export const getAlcoholicDrinks = async () => {
 
 export const getNonAlcoholicDrinks = async () => {
   try {
-    const res = await axios.get(`${API_BASE}/non-alcoholic/`);
+    const res = await axios.get(`${API_BASE}/non-alcohol/`);
     return res.data;
   } catch (e) {
     console.error("Problem getting non-alcoholic drinks.", e);
@@ -22,6 +22,7 @@ export const getNonAlcoholicDrinks = async () => {
 
 export const createDrink = async (newBeverage) => {
   try {
+    newBeverage.price = parseFloat(newBeverage.price).toFixed(2);
     const res = await axios.post(`${API_BASE}/`, newBeverage);
     return res.data;
   } catch (e) {

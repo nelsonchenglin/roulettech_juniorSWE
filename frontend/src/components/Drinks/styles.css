@@ -1,0 +1,141 @@
+.bevs-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: beige;
+}
+
+.bevs-list li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.bevs-container h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.bevs-list {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.name-and-price-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.bev-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.bev-price {
+  font-weight: bold;
+  font-style: italic;
+  color: #888;
+}
+
+.description-delete-btn-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.bev-desc {
+  flex: 1;
+  margin-right: 10px;
+}
+
+button {
+  background-color: #e60000;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #990000;
+}
+
+form {
+  margin-top: 30px;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+@media (min-width: 768px) {
+  .bevs-container {
+    max-width: 800px;
+  }
+
+  .name-and-price-row {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .description-delete-btn-row {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  form div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  form div label {
+    width: 30%;
+    margin-bottom: 0;
+  }
+
+  form div input,
+  form div select {
+    width: 68%;
+  }
+}

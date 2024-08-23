@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from rest_framework.generics import (
     ListAPIView,
-    RetrieveUpdateAPIView,
+    RetrieveUpdateDestroyAPIView,
     CreateAPIView
 )
 from .models import Product
@@ -11,7 +11,7 @@ class CreateBeverageAPIView(CreateAPIView):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
 
-class RetrieveUpdateBeverageAPIView(RetrieveUpdateAPIView):
+class RetrieveUpdateDestroyBeverageAPIView(RetrieveUpdateDestroyAPIView):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
 
@@ -20,16 +20,10 @@ class AlcoholicBeveragesAPIView(ListAPIView):
 
     def get_queryset(self):
         return Product.objects.filter(alcohol=True)
-     
+    
 
 class NonAlcoholicBeveragesAPIView(ListAPIView):
     serializer_class = ProductSerializer
 
     def get_queryset(self):
         return Product.objects.filter(alcohol=False)
-       
-class DrinksPricedAt16APIView(ListAPIView):
-    serializer_class = ProductSerializer
-
-    def get_queryset(self):
-        return Product.objects.all()
